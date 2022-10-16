@@ -1,0 +1,19 @@
+@mixin styleButton(){
+    border-radius: 15px;
+        border: $color-pink-1 solid $bd-1;
+        background-color: $color-pink-1;
+        font-size: $fs-2;
+        color: $color-white-1;
+        padding: $pd-9;
+        transition: all 0.5s;
+
+        p {
+            margin: 0;
+        }
+
+        &:hover {
+            background-color: $color-none;
+            color: $color-pink-1;
+
+        } 
+}

@@ -1,0 +1,63 @@
+header {
+    background-image: url(../Images/yellow_top_wave_01.png);
+    background-size: cover;
+    background-position: center bottom;
+
+    #collapsibleNavbar {
+        .nav-link {
+            font-size: $fs-1;
+            padding: 0 $pd-4 0 0;
+            color: $color-text-1;
+            font-weight: $fw-2;
+            transition: 0.5s;
+            @include fontTitle;
+
+            &::after {
+                content: " ";
+                display: block;
+                background-color: $color-pink-1;
+                text-align: center;
+                height: 8px;
+                width: 8px;
+                margin-left: 40%;
+                border-radius: 50%;
+                transform: scale(0);
+                transition: 0.5s;
+            }
+
+            &:hover {
+                @include styleText($fs-1, $fw-2, $color-pink-1);
+
+                &::after {
+                    transform: scale(1);
+                }
+            }
+        }
+
+    }
+
+    .btnPage {
+        @include styleButton;
+        
+    }
+
+    .contact__tabula {
+        .social__tabula {
+            a {
+                padding: 0 $pd-3;
+                color: $color-black-1;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $color-pink-1;
+                }
+            }
+        }
+
+    }
+
+    .navbar-toggler {
+        background-color: $color-pink-1;
+    }
+
+}

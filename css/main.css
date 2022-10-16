@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+header {
+  background-image: url(../Images/yellow_top_wave_01.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+header #collapsibleNavbar .nav-link {
+  font-size: 16px;
+  padding: 0 5px 0 0;
+  color: #181818;
+  font-weight: 600;
+  transition: 0.5s;
+  font-family: "Montserrat", sans-serif;
+}
+header #collapsibleNavbar .nav-link::after {
+  content: " ";
+  display: block;
+  background-color: #b61984;
+  text-align: center;
+  height: 8px;
+  width: 8px;
+  margin-left: 40%;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.5s;
+}
+header #collapsibleNavbar .nav-link:hover {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b61984;
+}
+header #collapsibleNavbar .nav-link:hover::after {
+  transform: scale(1);
+}
+header .btnPage {
+  border-radius: 15px;
+  border: #b61984 solid 1px;
+  background-color: #b61984;
+  font-size: 13.5px;
+  color: #FFFFFF;
+  padding: 10px;
+  transition: all 0.5s;
+}
+header .btnPage p {
+  margin: 0;
+}
+header .btnPage:hover {
+  background-color: transparent;
+  color: #b61984;
+}
+header .contact__tabula .social__tabula a {
+  padding: 0 0.8em;
+  color: black;
+  transition: 0.3s;
+}
+header .contact__tabula .social__tabula a:hover {
+  color: #b61984;
+}
+header .navbar-toggler {
+  background-color: #b61984;
+}
+
+.carousel__tabula {
+  background-image: url(../Images/Violet_top_left_wave.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+.carousel__tabula .carousel__content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b61984;
+}
+.carousel__tabula .carousel__content h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.teacher__part {
+  background-image: url(../../Images/Violet_top_right_wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.teacher__part .teacher__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.teacher__part .teacher__content .people__item {
+  width: 20%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 20px;
+  overflow: hidden;
+  transition: all 1s;
+}
+.teacher__part .teacher__content .people__item .img__people {
+  transition: all 1s;
+}
+.teacher__part .teacher__content .people__item .img__people img {
+  max-width: 100%;
+  height: auto;
+}
+.teacher__part .teacher__content .people__item .img__people:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.teacher__part .teacher__content .people__item .detail__people {
+  margin: 5px;
+  text-align: center;
+}
+.teacher__part .teacher__content .people__item .detail__people span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b61984;
+}
+.teacher__part .teacher__content .people__item .detail__people h4 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: black;
+  padding: 0.5em 0;
+}
+.teacher__part .teacher__content .people__item .detail__people p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+.teacher__part .teacher__content .people__item:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+  background-image: url(../Images/accent_bottom_wave_01.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+.contact .form__register {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.contact .form__register h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #181818;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-bottom: 14px;
+}
+.contact .form__register .btnPage {
+  border-radius: 15px;
+  border: #b61984 solid 1px;
+  background-color: #b61984;
+  font-size: 13.5px;
+  color: #FFFFFF;
+  padding: 10px;
+  transition: all 0.5s;
+  width: 40%;
+}
+.contact .form__register .btnPage p {
+  margin: 0;
+}
+.contact .form__register .btnPage:hover {
+  background-color: transparent;
+  color: #b61984;
+}
+.contact .form__register .btnPage h4 {
+  margin: 0;
+}
+.contact .form__register .input-group-prepend .input-group-text {
+  background-color: #b61984;
+  border: none;
+}
+.contact .form__register .input-group-prepend .input-group-text i {
+  color: #FFFFFF;
+}
+
+footer {
+  background-image: url(../Images/footer_background.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+footer .footer__tabula {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer__tabula .contact__us {
+  padding: 100px 0;
+}
+footer .footer__tabula .contact__us h4 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+footer .footer__tabula .contact__us ul li {
+  list-style: none;
+  color: #FFFFFF;
+  padding: 5px 0;
+}
+footer .footer__tabula .contact__us ul li span {
+  font-size: 0.8rem;
+  padding-left: 0.8em;
+}
+footer .footer__tabula .contact__us .social__tabula a i {
+  padding-right: 0.5em;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+footer .footer__tabula .contact__us .social__tabula a:hover i {
+  color: #191919;
+}
+footer .footer__tabula .quick__link, footer .footer__tabula .about__us {
+  padding: 100px 0;
+}
+footer .footer__tabula .quick__link h4, footer .footer__tabula .about__us h4 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+footer .footer__tabula .quick__link ul, footer .footer__tabula .about__us ul {
+  list-style: none;
+}
+footer .footer__tabula .quick__link ul li, footer .footer__tabula .about__us ul li {
+  padding: 5px 0;
+}
+footer .footer__tabula .quick__link ul li a, footer .footer__tabula .about__us ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  transition: all 0.5s;
+}
+footer .footer__tabula .quick__link ul li a::after, footer .footer__tabula .about__us ul li a::after {
+  content: "";
+  display: block;
+  width: 50px;
+  padding-top: 0.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+footer .footer__tabula .quick__link ul li a:hover, footer .footer__tabula .about__us ul li a:hover {
+  color: inherit;
+  opacity: 0.2;
+}
+footer .footer__tabula .newsletter {
+  padding: 100px 0;
+}
+footer .footer__tabula .newsletter h4 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+footer .footer__tabula .newsletter .value__email {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__tabula .newsletter .value__email .email__input, footer .footer__tabula .newsletter .value__email button {
+  border-radius: 30px;
+  padding: 20px 50px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+}
+footer .footer__tabula .newsletter .value__email button {
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.5s;
+}
+footer .footer__tabula .newsletter .value__email button:hover {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}/*# sourceMappingURL=main.css.map */

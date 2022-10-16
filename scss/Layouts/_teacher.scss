@@ -1,0 +1,60 @@
+.teacher__part {
+    background-image: url(../../Images/Violet_top_right_wave.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $pd-8 0;
+
+
+    .teacher__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+
+        .people__item {
+            width: 20%;
+            background-color: $color-white-1;
+            border-radius: 10px;
+            margin: $pd-7;
+            overflow: hidden;
+            transition: all 1s;
+
+            .img__people {
+                transition: all 1s;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                &:hover {
+                    transform: scale3d(1.05, 1.05, 1.05);
+                }
+            }
+
+            .detail__people {
+                margin: $mg-5;
+                text-align: center;
+
+                span {
+                    @include styleText($fs-1, $fw-1, $color-pink-1);
+                }
+
+                h4 {
+                    @include styleText($fs-3, $fw-3, $color-black-1);
+                    padding: $pd-2 0;
+                }
+                p{
+                    @include styleText($fs-1, $fw-1, $color-black-1);
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+            }
+        }
+    }
+}

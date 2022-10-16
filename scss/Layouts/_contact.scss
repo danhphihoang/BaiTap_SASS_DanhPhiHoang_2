@@ -1,0 +1,40 @@
+.contact {
+    background-image: url(../Images/accent_bottom_wave_01.png);
+    background-size: cover;
+    background-position: center bottom;
+
+    .form__register {
+        background-color: $color-white-1;
+        padding: $pd-7;
+        border-radius: 20px;
+        box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+
+        h2 {
+            @include styleText($fs-5, $fw-2, $color-text-1);
+            @include fontTitle();
+            text-align: center;
+            padding-bottom: $pd-1;
+        }
+
+        .btnPage {
+            @include styleButton;
+            width: 40%;
+
+            h4 {
+                margin: 0;
+            }
+        }
+
+        .input-group-prepend {
+            .input-group-text {
+                background-color: $color-pink-1;
+                border: none;
+                i {
+                    color: $color-white-1;
+                }
+            }
+        }
+
+
+    }
+}
